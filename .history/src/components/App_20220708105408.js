@@ -7,7 +7,7 @@ const App = (props) => {
   const { location } = props;
   return (
     <div className="App">
-      <LocationDetails city={location.city} country={location.country} />
+      <LocationDetails city={location.city} coountry={location.country} />
     </div>
   );
 };
