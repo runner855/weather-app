@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Abril Fatface", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://ane4bf-datap1.s3-eu-west-1.amazonaws.com/wmocms/s3fs-public/styles/featured_media_detail/public/advanced_page/featured_media/50732578156_1cd70124d4_o.jpg?0Rox9vujvVqM97Cy.YkH1l1GCg6Ndv6V&itok=D1FEV6sy");
+}
