@@ -12,8 +12,6 @@ const App = (props) => {
       <ForecastSummary
         description={forecasts[0].description}
         date={forecasts[0].date}
-        icon={forecasts[0].icon}
-        temperature={forecasts[0].temperature.max}
       />
     </div>
   );

@@ -6,14 +6,13 @@ import ForecastSummary from "./ForecastSummary";
 
 const App = (props) => {
   const { location, forecasts } = props;
+  console.log(props);
   return (
     <div className="App">
       <LocationDetails city={location.city} country={location.country} />
       <ForecastSummary
         description={forecasts[0].description}
         date={forecasts[0].date}
-        icon={forecasts[0].icon}
-        temperature={forecasts[0].temperature.max}
       />
     </div>
   );
@@ -27,12 +26,7 @@ App.propTypes = {
     country: PropTypes.string,
   }).isRequired,
   forecasts: PropTypes.shape({
-    date: PropTypes.number.isRequired,
-    description: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
-    temperature: PropTypes.shape({
-      min: PropTypes.number,
-      max: PropTypes.number,
-    }).isRequired,
+    date: PropTypes.number,
+    description: PropTypes.string,
   }).isRequired,
 };
