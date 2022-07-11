@@ -1,0 +1,9 @@
+.weather-app {
+  margin: 0 100px;
+}
+
+@media only screen and (max-width: 954px) {
+  .weather-app {
+    display: block;
+  }
+}

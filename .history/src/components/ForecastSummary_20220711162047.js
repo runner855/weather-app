@@ -1,7 +1,6 @@
 import React from "react";
 import moment from "moment";
 import "../styles/ForecastSummary.css";
-import WeatherIcon from "react-icons-weather";
 import PropTypes from "prop-types";
 
 const ForecastSummary = (props) => {
@@ -9,15 +8,17 @@ const ForecastSummary = (props) => {
   const currentDate = moment(date).format("MMM Do YYYY");
   return (
     <div className="forecast-summary">
-      <div className="forecast-summary__date">{`${currentDate}`}</div>
-      <div className="forecast-summary__icon">
-        <WeatherIcon name="owm" iconId={icon} />
+      <div className="forecast-summary__content">
+        <div className="forecast-summary__hover">
+          <div className="forecast-summary__date">{`${currentDate}`}</div>
+          <div className="forecast-summary__icon">{`${icon}`}</div>
+          <div className="forecast-summary__temperature">
+            {`${temperature.max}`}
+            &deg;C
+          </div>
+          <div className="forecast-summary__description">{`${description}`}</div>
+        </div>
       </div>
-      <div className="forecast-summary__temperature">
-        {`${temperature.max}`}
-        &deg;C
-      </div>
-      <div className="forecast-summary__description">{`${description}`}</div>
     </div>
   );
 };

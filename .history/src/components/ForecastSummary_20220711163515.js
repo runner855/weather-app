@@ -10,7 +10,7 @@ const ForecastSummary = (props) => {
   return (
     <div className="forecast-summary">
       <div className="forecast-summary__date">{`${currentDate}`}</div>
-      <div className="forecast-summary__icon">
+      <div className="forecast-summary__icon">{`${icon}`}
         <WeatherIcon name="owm" iconId={icon} />
       </div>
       <div className="forecast-summary__temperature">

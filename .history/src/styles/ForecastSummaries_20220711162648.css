@@ -1,0 +1,4 @@
+.forecast-summaries {
+  display: grid;
+  justify-content: space-between;
+}
