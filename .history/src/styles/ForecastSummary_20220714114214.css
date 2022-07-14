@@ -1,0 +1,34 @@
+.forecast-summary {
+  background-color: rgb(210, 240, 247);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 20px;
+}
+
+.forecast-summary__icon {
+  font-size: 2.5em;
+}
+
+.forecast-summary__date,
+.forecast-summary__temperature,
+.forecast-summary__description {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.forecast-summary__date,
+.forecast-summary__description,
+.forecast-summary__icon,
+.forecast-summary__temperature,
+.forecast-summary__btn {
+  text-align: center;
+}
+
+.forecast-summary__btn > button {
+  font-size: 20px;
+  background-color: aqua;
+  border-radius: 1em;
+}

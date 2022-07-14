@@ -1,0 +1,37 @@
+.forecast-details {
+  background-color: rgb(210, 240, 247);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 5px;
+  padding: 2em;
+  text-align: center;
+  height: 150px;
+  margin: 20em;
+}
+
+.forecast-details__date,
+.forecast-details__temperature {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 1750px) and( max-width: 2000px) {
+  .forecast-details__left {
+    float: left;
+    width: 50%;
+  }
+
+  .forecast-details__right {
+    float: right;
+    width: 50%;
+  }
+
+  .forecast-details__icon {
+    font-size: 4em;
+  }
+
+  .forecast-details {
+    margin: 2em 40em 2em 40em;
+  }
+}
